@@ -1,4 +1,5 @@
 ## The modules are
+    eManager
     |-- accounting
     |-- crm
     |-- hr
