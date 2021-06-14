@@ -104,7 +104,7 @@ worker1 = Worker(worker_name)
 if not worker1.have_id:
     address = "kamarpukur"  # str(input("Enter Address.. : "))
     age = 46
-    mobile_no = "7908024831"  # str(input("Mobile No. : "))
+    mobile_no = "7908795631"  # str(input("Mobile No. : "))
     join_date = "20/03/2012"
     pay_r = 350.0
     group = "Owner"  # str(input("Worker Group :"))
@@ -112,7 +112,7 @@ if not worker1.have_id:
     Worker(worker_name).check_database()
 
 
-worker1.update_details(["MOBILE_NO", "ADDRESS"], ["7908024831", "Kamarpukur"])
+worker1.update_details(["MOBILE_NO", "ADDRESS"], ["756024831", "Kamarpukur"])
 """
 worker1.update_pay_rate(256)
 worker1.update_address("Kamarpukur")

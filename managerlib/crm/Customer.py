@@ -56,7 +56,7 @@ cstmr_name = "Somnath Pandit"
 cstmr1 = Customer(cstmr_name)
 if not cstmr1.have_id:
     address = "kamarpukur"#str(input("Enter Address.. : "))
-    mobile_no = "7908784952"#str(input("Mobile No. : "))
+    mobile_no = "782264852"#str(input("Mobile No. : "))
     group = "Individual"#str(input("Customer Group :"))
     AddCustomer(cstmr_name, address, mobile_no, group=group)
 
