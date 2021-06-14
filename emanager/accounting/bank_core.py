@@ -1,14 +1,18 @@
 import os
 import uuid
+from constants import*
 import pandas as pd
-from datetime import datetime as dt
 
 acc_path = os.path.dirname(os.path.realpath(__file__))
-TIMESTAMP = dt.now()
-
 
 class Transaction:
-    def deposit(self, amount, payee, remarks="Credited in treasury"):
+    #TODO
+    """acts as a mediator between two parties and returns them transaction details so that they can update their accounts"""
+    
+    def __init__(self):
+        print(super().__name__)
+        
+    def deposit(self, amount, payer, remarks="Self Deposit"):
         trans_details = {
             "DATE": TIMESTAMP,
             "TRANSACTION_ID": self.transaction_id(),
@@ -22,7 +26,7 @@ class Transaction:
         trans_data.to_csv(f"{acc_path}/treasury.csv", mode="a", header=False, index=False)
         self.check_vault_status()
 
-    def withdrawl(self, amount, debiter, remarks="Debited from treasury"):
+    def withdrawl(self, amount, benifactor, remarks="Self Withdrawl"):
         trans_details = {
             "DATE": TIMESTAMP,
             "TRANSACTION_ID": self.transaction_id(),
@@ -42,8 +46,13 @@ class Transaction:
         transaction_id = uuid.uuid4().hex
         return transaction_id
 
+class AccountCaller:
+    pass
 
-class Bank:
+class Ledger:
+    pass
+       
+class Bank(Transaction, AccountCaller, Ledger):
     def __init__(self):
         pass
         
@@ -115,7 +124,7 @@ class Account(Transaction):
     def cr_balance():
         pass
 
-    def view_statement():
+    def view_statement(last_transactions=10):
         pass
 
     def generate_passbook():

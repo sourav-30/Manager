@@ -1,9 +1,8 @@
 import os
+from constants import*
 import pandas as pd
-from datetime import datetime as dt
 
 hr_path = os.path.dirname(os.path.realpath(__file__))
-TIMESTAMP=dt.now()
 
 
 class Worker:

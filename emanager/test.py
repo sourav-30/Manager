@@ -16,11 +16,9 @@ if not worker1.have_id:
 
 
 worker1.update_details(["MOBILE_NO", "ADDRESS"], ["756024831", "Kamarpukur"])
-"""
-worker1.update_pay_rate(256)
-worker1.update_address("Kamarpukur")
-worker1.update_mobile_no("7905646223")
-"""
+
+worker1.update_pay_rate(400)
+
 
 ## test Custotmer.py
 cstmr_name = "Somnath Pandit"
@@ -36,4 +34,17 @@ if not cstmr1.have_id:
 cstmr1.update_details(["MOBILE_NO", "ADDRESS"], ["7264589260", "Kamarpukur"])
 
 ## test core_bank.py
-ca = CreateAccount("Somnath Pandit", "Kamarpukur", 302112564)
+CreateAccount("Somnath Pandit", "Kamarpukur", 9302112564)
+trsr= Treasury()
+trsr.deposit(500,3000002)
+
+
+
+
+
+
+
+
+
+
+

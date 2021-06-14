@@ -1,10 +1,10 @@
-#import sqlite3
 import os
+from constants import*
 import pandas as pd
-from datetime import datetime as dt
+#import sqlite3
 
 crm_file_path = os.path.dirname(os.path.realpath(__file__))
-TIMESTAMP = dt.now()
+#TIMESTAMP = dt.now()
 
 class Customer():
     """Check customer in database"""
