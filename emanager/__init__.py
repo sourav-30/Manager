@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from imports import *
+from emanager.imports import *
 
 def main():
     const.initialize_directories()

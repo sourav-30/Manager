@@ -1,1 +1,1 @@
-from .core_bank import * 
+from emanager.bank_core import *

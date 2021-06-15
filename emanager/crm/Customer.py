@@ -1,5 +1,5 @@
 import os
-from constants import*
+from emanager.constants import*
 import pandas as pd
 #import sqlite3
 

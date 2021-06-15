@@ -1,4 +1,4 @@
-## The modules are
+## The aimed modules are
     eManager
     |-- accounting
     |-- crm
@@ -8,5 +8,3 @@
     |-- production
     |-- UI
 
-
-test.py is being used for testing modules
